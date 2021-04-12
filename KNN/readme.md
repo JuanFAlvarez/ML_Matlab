@@ -17,8 +17,10 @@ To perform the tests on the subset features we must use either subsets that had 
 
 
 **Observation:**
+
 It can be observed that the dataset with only petal length and sepal width obtained a higher accuracy compared to the dataset containing only the sepal length and sepal width. Based on this we can assume a good separability in the features will result in a better classification. We can also observe a smaller standard deviation on the petal/sepal dataset, which indicate a lesser uncertainty for the data.
 
 
 **Conclusion:**
+
 Based on our results and data, we realized that the use of K-Nearest Neighbors was successful in classifying the sample in the ‘iris.data’ with great accuracy. The predicted labels were able to match the test data and the performance test returned extremely positive data on the accuracy of a range of 1 to 8 for K over many iterations of testing for each. We were able to also learn about the algorithm’s abilities and limitations, such as when subsets of data are used. Finally, we also noticed that a good K value to use for this data was K=3 as it would provide very accurate results with a very small amount of computation times. After K=6, we noticed the maximum accuracy for prediction, but we must consider the computation time. K=3 provides a middle ground between computation time and satisfying results, so we conclude that K=3 seems to be the best value to choose for this application. Increasing K after 6 resulted in a decline of accuracy which shows that the higher the K doesn’t necessarily mean the better prediction.
