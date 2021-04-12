@@ -11,14 +11,14 @@ Finally, we get the mode of the list of labels extracted and choose that to be a
 To measure performance, we must use several ranges of k and compute accuracy using test labels and predicted labels. This accuracy computation for every k will have 100 iterations in which the data will be randomly split into test and training samples with a ratio of 70:30. Afterward the accuracies will be stored in a matrix, the average accuracy will be calculated, and the standard derivation of the computation will also be obtained due to the uncertainty of using a randomized process. This will be plotted in order to observe the effect of standard deviation in the average accuracy.
 
 
-**Tests on a subset of features:
+**Tests on a subset of features:**
 
 To perform the tests on the subset features we must use either subsets that had good separability and poor separability. We then use two tests with k=1 to determine classification success. It required a slight modification on preprocessing due to the use of another set of data.
 
 
-**Observation:
+**Observation:**
 It can be observed that the dataset with only petal length and sepal width obtained a higher accuracy compared to the dataset containing only the sepal length and sepal width. Based on this we can assume a good separability in the features will result in a better classification. We can also observe a smaller standard deviation on the petal/sepal dataset, which indicate a lesser uncertainty for the data.
 
 
-**Conclusion
+**Conclusion:**
 Based on our results and data, we realized that the use of K-Nearest Neighbors was successful in classifying the sample in the ‘iris.data’ with great accuracy. The predicted labels were able to match the test data and the performance test returned extremely positive data on the accuracy of a range of 1 to 8 for K over many iterations of testing for each. We were able to also learn about the algorithm’s abilities and limitations, such as when subsets of data are used. Finally, we also noticed that a good K value to use for this data was K=3 as it would provide very accurate results with a very small amount of computation times. After K=6, we noticed the maximum accuracy for prediction, but we must consider the computation time. K=3 provides a middle ground between computation time and satisfying results, so we conclude that K=3 seems to be the best value to choose for this application. Increasing K after 6 resulted in a decline of accuracy which shows that the higher the K doesn’t necessarily mean the better prediction.
