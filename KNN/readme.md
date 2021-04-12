@@ -9,3 +9,8 @@ Finally, we get the mode of the list of labels extracted and choose that to be a
 Measuring Performance
 
 To measure performance, we must use several ranges of k and compute accuracy using test labels and predicted labels. This accuracy computation for every k will have 100 iterations in which the data will be randomly split into test and training samples with a ratio of 70:30. Afterward the accuracies will be stored in a matrix, the average accuracy will be calculated, and the standard derivation of the computation will also be obtained due to the uncertainty of using a randomized process. This will be plotted in order to observe the effect of standard deviation in the average accuracy.
+
+
+Tests on a subset of features:
+
+To perform the tests on the subset features we must use either subsets that had good separability and poor separability. We then use two tests with k=1 to determine classification success. It required a slight modification on preprocessing due to the use of another set of data.
